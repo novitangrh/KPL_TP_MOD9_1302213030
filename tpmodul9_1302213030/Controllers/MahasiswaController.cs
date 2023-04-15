@@ -23,9 +23,9 @@ namespace tpmodul9_1302213030.Controllers
 
         [HttpGet("{id}")]
 
-        public Mahasiswa Get(int index)
+        public Mahasiswa Get(int id)
         {
-            return ListMhs[index];
+            return ListMhs[id];
         }
 
         [HttpPost]
@@ -37,9 +37,9 @@ namespace tpmodul9_1302213030.Controllers
 
         [HttpDelete("{id}")]
 
-        public void Delete(int index)
+        public void Delete(int id)
         {
-            ListMhs.RemoveAt(index);
+            ListMhs.RemoveAt(id);
         }
     }
 }
